@@ -6,9 +6,9 @@ try:
 except ImportError:
     import ConfigParser as configparser
 
-path = 'C:\goodus\TFP3530.ini'
-name = 'cashier-'
+path = 'path'
 avtor = '©by Tolchelnikov'
+
 error_write = 'не поменял'
 error_none = 'файла с настройками нет'
 success = 'Успешно поменял'
@@ -23,6 +23,8 @@ canvas.create_text(500, 580, text=avtor, fill='black', font=('Helvetica', 16))
 
 def setDateTimeAtStart_ON():
     canvas.delete("all")
+    canvas.create_text(500, 580, text=avtor, fill='black', font=('Helvetica', 16))
+
     canvas.clipboard_clear()
     if (os.path.exists(path)):
         first_x = 200
@@ -41,6 +43,7 @@ def setDateTimeAtStart_ON():
 
 def setDateTimeAtStart_OFF():
     canvas.delete("all")
+    canvas.create_text(500, 580, text=avtor, fill='black', font=('Helvetica', 16))
     if (os.path.exists(path)):
         first_x = 200
         config = configparser.ConfigParser()
