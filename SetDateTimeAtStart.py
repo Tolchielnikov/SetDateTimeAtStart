@@ -13,7 +13,7 @@ error_write = 'не поменял'
 error_none = 'файла с настройками нет'
 success = 'Успешно поменял'
 step = 20
-
+kass_list = []
 root = Tk()
 root.title('SetDateTimeAtStart')
 canvas = Canvas(root, width=600, height=600)
