@@ -16,7 +16,7 @@ success_On = 'Успешно включил - '
 success_Off = 'Успешно выключил - '
 stepDown = 20
 stepRight = 350
-kass_list = ['1','2','3']
+kass_list = ['1', '2', '3']
 root = Tk()
 root.title('SetDateTimeAtStart')
 canvas = Canvas(root, width=700, height=700)
